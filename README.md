@@ -36,8 +36,8 @@ The system allows:
 
 ## Hardware Used
 - ESP32 Dev Board
-- Relay module
-- Push buttons / input sensors
+- Relay module (connected to GPIO 27)
+- Headphone detection input (GPIO 13)
 - PC (BLE HID receiver)
 
 ---
@@ -52,10 +52,17 @@ The system allows:
 
 ## Example Use Cases
 - Remote PC power on/off
-- Switching audio output (headphones ↔ speakers)
+- Switching audio output (headphones <-> speakers)
 - Sending system shortcuts via BLE
 - Remote IoT device control via smartphone
 
+---
+## How to run
+
+1. Set your WiFi credentials and Blynk token
+2. Flash the code to ESP32 
+3. Connect to the device via BLE
+4. Use Blynk app or hardware inputs to control the system
 
 ---
 
@@ -67,14 +74,5 @@ The system allows:
 
 ---
 
-## Future Improvements
-- Replace Blynk with custom MQTT backend
-- Add encrypted BLE communication
-- Improve state machine architecture
-- Expand support for multiple devices
-
----
-
 ## Author
 Norbert Boroń
-Embedded Systems & Automation Engineering Student
